@@ -7,7 +7,7 @@ from utils import load_data, filter_data
 df = load_data("data.csv")
 
 # Check if query params exist (for API mode)
-params = st.experimental_get_query_params()
+params = st.query_params()
 
 if "api" in params:
     # API Mode
